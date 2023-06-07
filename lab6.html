@@ -10,39 +10,32 @@
 </head>
 
 <body>
-  .form {
-  padding: 20px;
-  background-color: #f2f2f2;
-  width: 500px;
-  margin: auto;
-}
-.form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.form input[type="text"],
-.form input[type="email"],
-.form input[type="tel"],
-.form input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.form button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.form button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
+<form class="form">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+  </div>
+  <button type="submit">Sign Up</button>
+</form>
         
 </body>
